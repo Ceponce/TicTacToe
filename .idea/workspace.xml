@@ -8,7 +8,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1367908516130" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1367908534870" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1367913764091" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1367914016332" ignored="false" />
     <file path="/Main.java" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1367913748915" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +72,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="74" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.6494157">
+            <state line="4" column="44" selection-start="87" selection-end="87" vertical-scroll-proportion="0.10016695">
               <folding />
             </state>
           </provider>
@@ -111,7 +111,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1366" />
-    <option name="y" value="24" />
+    <option name="y" value="-744" />
     <option name="width" value="1366" />
     <option name="height" value="744" />
   </component>
@@ -262,7 +262,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1366" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="-1366" y="-744" width="1366" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -361,7 +361,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="74" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.6494157">
+        <state line="4" column="44" selection-start="87" selection-end="87" vertical-scroll-proportion="0.10016695">
           <folding />
         </state>
       </provider>
