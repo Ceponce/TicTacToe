@@ -70,8 +70,89 @@ public class Main {
     //Value of the game... Perhaps the opponents red alert level.
     //lets call this method...
     //Method green alert... Paybe just determines a winning situation...     Rule 1.   :D
-    public static int green(){
+    public static int green(String w){
+        // First Row
+        if (sum(w, 0, 1, 2) == 2){
+            //look here for  red alert
+            if(value(w, 0) ==0)
+                return 0;
+            else if(value(w, 1) == 0)
+                return 1;
+            else
+                return 2;
+        }
+        //Second Row
+        else if (sum(w, 3, 4, 5) == 2){
+            //look here for  red alert
+            if(value(w, 3) ==0)
+                return 3;
+            else if(value(w, 4) == 0)
+                return 4;
+            else
+                return 5;
+        }
+        //Final Row
+        else if (sum(w, 6, 7, 8) == 2){
+            //look here for  red alert
+            if(value(w, 6) ==0)
+                return 6;
+            else if(value(w, 7) == 0)
+                return 7;
+            else
+                return 8;
+        }
+        //First Column
+        if (sum(w, 0, 3, 6) == 2){
+            //look here for  red alert
+            if(value(w, 0) ==0)
+                return 0;
+            else if(value(w, 3) == 0)
+                return 3;
+            else
+                return 6;
+        }
+        //Second Column
+        if (sum(w, 1, 4, 7) == 2){
+            //look here for  red alert
+            if(value(w, 1) ==0)
+                return 1;
+            else if(value(w, 4) == 0)
+                return 4;
+            else
+                return 7;
+        }
+        //Final Column
+        if (sum(w, 2, 5, 8) == 2){
+            //look here for  red alert
+            if(value(w, 2) ==0)
+                return 2;
+            else if(value(w, 5) == 0)
+                return 5;
+            else
+                return 8;
+        }
+        //Top left Diagnol
+        if (sum(w, 0, 4, 8) == 2){
+            //look here for  red alert
+            if(value(w, 0) ==0)
+                return 0;
+            else if(value(w, 4) == 0)
+                return 4;
+            else
+                return 8;
+        }
+        //Top Right Diagnol
+        if (sum(w, 2, 4, 6) == 2){
+            //look here for  red alert
+            if(value(w, 2) == 0)
+                return 2;
+            else if(value(w, 4) == 0)
+                return 4;
+            else
+                return 6;
+        }
 
+            return 46;
     }
 
     //Method red alert.   -------------very important to stop at a red alert and call it out.        Rule 2. :D
@@ -156,10 +237,88 @@ public class Main {
             else
                 return 6;
         }
-        else
+
             return 45;
 
     }
+
+
+    public static int white(String w){
+        // First Row
+        if (sum(w, 0, 1, 2) == 3){
+                return 3;
+        }
+        //Second Row
+        else if (sum(w, 3, 4, 5) == 3){
+                return 3;
+        }
+        //Final Row
+        else if (sum(w, 6, 7, 8) == 3){
+                return 3;
+        }
+        //First Column
+        if (sum(w, 0, 3, 6) == 3){
+                return 3;
+        }
+        //Second Column
+        if (sum(w, 1, 4, 7) == 3){
+                return 3;
+        }
+        //Final Column
+        if (sum(w, 2, 5, 8) == 3){
+                return 3;
+        }
+        //Top left Diagnol
+        if (sum(w, 0, 4, 8) == 3){
+                return 3;
+        }
+        //Top Right Diagnol
+        if (sum(w, 2, 4, 6) == 3){
+                return 3;
+        }
+
+            return 0;
+    }
+
+    //Method black alert
+    public static int black(String w){
+        // First Row
+        if (sum(w, 0, 1, 2) == -3){
+                return -3;
+        }
+        //Second Row
+        else if (sum(w, 3, 4, 5) == -3){
+                return -3;
+        }
+        //Final Row
+        else if (sum(w, 6, 7, 8) == -3){
+                return -3;
+        }
+        //First Column
+        if (sum(w, 0, 3, 6) == -3){
+                return -3;
+        }
+        //Second Column
+        if (sum(w, 1, 4, 7) == -3){
+                return -3;
+        }
+        //Final Column
+        if (sum(w, 2, 5, 8) == -3){
+                return -3;
+        }
+        //Top left Diagnol
+        if (sum(w, 0, 4, 8) == -3){
+                return -3;
+        }
+        //Top Right Diagnol
+        if (sum(w, 2, 4, 6) == -3){
+                return -3;
+        }
+
+            return 0;
+
+    }
+
 
     //Method to sum 3 values in string
     public static int sum(String a, int x, int y, int z){
