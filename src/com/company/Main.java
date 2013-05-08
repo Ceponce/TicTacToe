@@ -67,9 +67,13 @@ public class Main {
     // Recursive function that tracks who's turn it is.
     //also stores opponents red alerts.
 
+    public static int Analysis(String soFar, int SoFar, Boolean turn){
+        return 1;
+    }
+
     //Value of the game... Perhaps the opponents red alert level.
     //lets call this method...
-    //Method green alert... Paybe just determines a winning situation...     Rule 1.   :D
+    //Method green alert... Maybe just determines a winning situation...     Rule 1.   :D
     public static int green(String w){
         // First Row
         if (sum(w, 0, 1, 2) == 2){
