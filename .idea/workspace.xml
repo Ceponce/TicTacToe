@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1972ec23-f38f-488c-8176-b51ed68d8de9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TicTacToe.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1368059534879" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1367908534870" ignored="false" />
-    <file path="/Main.java" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1368061277242" ignored="false" />
+    <file path="/Main.java" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1368061668394" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="28" selection-start="2805" selection-end="2805" vertical-scroll-proportion="0.77424747">
+            <state line="86" column="98" selection-start="2288" selection-end="2288" vertical-scroll-proportion="0.21404682">
               <folding />
             </state>
           </provider>
@@ -345,7 +344,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="28" selection-start="2805" selection-end="2805" vertical-scroll-proportion="0.77424747">
+        <state line="86" column="98" selection-start="2288" selection-end="2288" vertical-scroll-proportion="0.21404682">
           <folding />
         </state>
       </provider>

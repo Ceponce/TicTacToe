@@ -80,7 +80,6 @@ public class Main {
             return white * turn;
 
 
-
         int green = green(map);
         int red = red(map);
 
@@ -89,12 +88,12 @@ public class Main {
 
             //I need to mod map to include appropriate key value...
             map = replace(map, turn(turn), green);
-            count = Analysis(map, soFar + turn(turn), -value, -turn);
+            count = Analysis(map, soFar + turn(turn), -value, -turn) + 1 * turn;
 
         }else if( red != 45){
             //key is red
             map = replace(map, turn(turn), red);
-            count = Analysis(map, soFar + turn(turn), -value, -turn);
+            count = Analysis(map, soFar + turn(turn), -value, -turn) - 1 * turn;
         }else{
             //Free to loop through all possibilities recursively
 
