@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="1972ec23-f38f-488c-8176-b51ed68d8de9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TicTacToe.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1368047353609" ignored="false" />
+    <file path="/Dummy.txt" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1368059534879" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1367908534870" ignored="false" />
-    <file path="/Main.java" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1368050208000" ignored="false" />
+    <file path="/Main.java" changelist="1972ec23-f38f-488c-8176-b51ed68d8de9" time="1368061277242" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="68" selection-start="1914" selection-end="1914" vertical-scroll-proportion="0.73578596">
+            <state line="102" column="28" selection-start="2805" selection-end="2805" vertical-scroll-proportion="0.77424747">
               <folding />
             </state>
           </provider>
@@ -145,15 +146,15 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="appearance" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -342,16 +343,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TicTacToe.iml">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="102" column="28" selection-start="2805" selection-end="2805" vertical-scroll-proportion="0.77424747">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/TicTacToe.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="68" selection-start="1914" selection-end="1914" vertical-scroll-proportion="0.73578596">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

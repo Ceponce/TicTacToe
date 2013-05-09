@@ -67,8 +67,45 @@ public class Main {
     // Recursive function that tracks who's turn it is.
     //also stores opponents red alerts.
 
-    public static int Analysis(String soFar, int SoFar, Boolean turn){
-        return 1;
+    public static int Analysis(String map, String soFar, int value, int turn){     //turn is going to help keep values on track.
+
+        int count;
+
+        int black = black(map);
+        if(black == -3)
+            return black * turn;
+
+        int white = white(map);
+        if(white == 3)
+            return white * turn;
+
+
+
+        int green = green(map);
+        int red = red(map);
+
+        if(green != 46){
+            //key is green
+
+            //I need to mod map to include appropriate key value...
+            map = replace(map, turn(turn), green);
+            count = Analysis(map, soFar + turn(turn), -value, -turn);
+
+        }else if( red != 45){
+            //key is red
+            map = replace(map, turn(turn), red);
+            count = Analysis(map, soFar + turn(turn), -value, -turn);
+        }else{
+            //Free to loop through all possibilities recursively
+
+            //loop
+                //map
+                //count --- count = Analysis(map, soFar + turn(turn), -value, -turn);
+
+        }
+
+
+        return count;
     }
 
     //Value of the game... Perhaps the opponents red alert level.
@@ -339,5 +376,19 @@ public class Main {
             return 1;
         else
             return -1;
+    }
+
+    public static String replace(String b, String player, int i){
+        String a = b.substring(0,i);
+        String c = b.substring(i+1,b.length());
+
+        return a + player + c;
+    }
+
+    public static String turn(int a) {
+        if (a == 1)
+            return "1";
+        else
+            return "2";
     }
 }
