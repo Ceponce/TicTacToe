@@ -58,7 +58,13 @@ public class Main {
 
 
         String irrelavent = "000000000";
-        String
+        String soFar = "";
+        String when = "";
+        int value = 0;
+        int turn = 1;
+        int game = 0;
+
+        Analysis(irrelavent, soFar, when, value, turn, game);
 
 
 
@@ -70,6 +76,9 @@ public class Main {
     public static int Analysis(String map, String soFar, String when, int value, int turn, int game){     //turn is going to help keep values on track.
 
         int count = 0;
+
+
+        System.out.println(map);
 
         int black = black(map);
         if(black == -3)
@@ -110,6 +119,7 @@ public class Main {
                 }
 
         }
+
 
 
         return count;
