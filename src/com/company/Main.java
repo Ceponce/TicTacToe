@@ -75,34 +75,44 @@ public class Main {
 
     public static int Analysis(String map, String soFar, String when, int value, int turn, int game){     //turn is going to help keep values on track.
 
+        int black = 0;
+        int white = 0;
         int count = 0;
+        int red = 99;
+        int green = 99;
+        String temp = map;
 
 
-        System.out.println(map);
+        //System.out.println("Map: " + map + "," + "Count: " + count);
 
-        int black = black(map);
-        if(black == -3)
+        black = black(map);
+        if(black == -3){
+            System.out.println("Lose");
+            pic(map);
             return black * turn;
-
-        int white = white(map);
-        if(white == 3)
+        }
+        white = white(map);
+        if(white == 3){
+            System.out.println("Win: ");
+            pic(map);
             return white * turn;
+        }
 
         if(game > 8)
             return 0;
 
 
-        int green = green(map);
-        int red = red(map);
+        green = green(map);
+        red = red(map);
 
-        if(green != 46){
+        if(green < 46){
             //key is green
 
             //I need to mod map to include appropriate key value...
             map = replace(map, turn(turn), green);
             count = Analysis(map, soFar + turn(turn), when + (game+1), -value, -turn, game +1) + 1 * turn;
 
-        }else if( red != 45){
+        }else if( red < 45){
             //key is red
             map = replace(map, turn(turn), red);
             count = Analysis(map, soFar + turn(turn), when +(game+1), -value, -turn, game + 1) - 1 * turn;
@@ -113,13 +123,14 @@ public class Main {
                 //map
                 for(int i = 0; i<9; i++){
                     if( value(map, i) == 0){
-                        map = replace(map, turn(turn), i);
-                        count = count + Analysis(map, soFar + turn(turn), when +(game+1), -value, -turn, game +1);
+                        temp = replace(map, turn(turn), i);
+                        count = count + Analysis(temp, soFar + turn(turn), when +(game+1), -value, -turn, game +1);
                     }
                 }
 
         }
 
+        //System.out.println("Map: " + map + "," + "Count: " + count);
 
 
         return count;
@@ -408,6 +419,19 @@ public class Main {
             return "1";
         else
             return "2";
+    }
+
+    public static void pic(String a){
+        System.out.println("---------");
+        System.out.println(a.substring(0,1) + " " + a.substring(1,2) + " " + a.substring(2,3));
+        System.out.println(a.substring(3,4) + " " + a.substring(4,5) + " " + a.substring(5,6));
+        System.out.println(a.substring(6,7) + " " + a.substring(7,8) + " " + a.substring(8,9));
+        System.out.println("---------");
+        System.out.println(value(a,0) + " " + value(a,1)+ " "  + value(a,2));
+        System.out.println(value(a,3) + " " + value(a,4)+ " "  + value(a,5));
+        System.out.println(value(a,6) + " " + value(a,7)+ " "  + value(a,8));
+        System.out.println("---------");
+
     }
 
 }
