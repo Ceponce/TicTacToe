@@ -57,8 +57,8 @@ public class Main {
      */
 
 
-        String irrelavent = "102102000";
-
+        String irrelavent = "000000000";
+        String
 
 
 
@@ -67,9 +67,9 @@ public class Main {
     // Recursive function that tracks who's turn it is.
     //also stores opponents red alerts.
 
-    public static int Analysis(String map, String soFar, int value, int turn){     //turn is going to help keep values on track.
+    public static int Analysis(String map, String soFar, String when, int value, int turn, int game){     //turn is going to help keep values on track.
 
-        int count;
+        int count = 0;
 
         int black = black(map);
         if(black == -3)
@@ -78,6 +78,9 @@ public class Main {
         int white = white(map);
         if(white == 3)
             return white * turn;
+
+        if(game > 8)
+            return 0;
 
 
         int green = green(map);
@@ -88,18 +91,23 @@ public class Main {
 
             //I need to mod map to include appropriate key value...
             map = replace(map, turn(turn), green);
-            count = Analysis(map, soFar + turn(turn), -value, -turn) + 1 * turn;
+            count = Analysis(map, soFar + turn(turn), when + (game+1), -value, -turn, game +1) + 1 * turn;
 
         }else if( red != 45){
             //key is red
             map = replace(map, turn(turn), red);
-            count = Analysis(map, soFar + turn(turn), -value, -turn) - 1 * turn;
+            count = Analysis(map, soFar + turn(turn), when +(game+1), -value, -turn, game + 1) - 1 * turn;
         }else{
             //Free to loop through all possibilities recursively
 
             //loop
                 //map
-                //count --- count = Analysis(map, soFar + turn(turn), -value, -turn);
+                for(int i = 0; i<9; i++){
+                    if( value(map, i) == 0){
+                        map = replace(map, turn(turn), i);
+                        count = count + Analysis(map, soFar + turn(turn), when +(game+1), -value, -turn, game +1);
+                    }
+                }
 
         }
 
@@ -384,10 +392,12 @@ public class Main {
         return a + player + c;
     }
 
+    // Return key string 1 or 2 from int -1 or 1
     public static String turn(int a) {
         if (a == 1)
             return "1";
         else
             return "2";
     }
+
 }
